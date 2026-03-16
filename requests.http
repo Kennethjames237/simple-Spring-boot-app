@@ -2,6 +2,9 @@
 GET http://localhost:8080/api/v1/Students
 
 ###
+GET http://localhost:8080/api/v1/Students/1
+
+###
 POST http://localhost:8080/api/v1/Students
 Content-Type: application/json
 
@@ -17,4 +20,24 @@ Content-Type: application/json
 {
 "name": "Kenny",
 "book": "Computer"
+}
+
+###
+POST http://localhost:8080/api/v1/Students
+Content-Type: application/json
+
+{
+  "name": "nna",
+  "book": "Biology"
+}
+
+###
+DELETE http://localhost:8080/api/v1/Students/3
+
+###
+PUT http://localhost:8080/api/v1/Students/3
+Content-Type: application/json
+
+{
+  "book":"Chemistry"
 }

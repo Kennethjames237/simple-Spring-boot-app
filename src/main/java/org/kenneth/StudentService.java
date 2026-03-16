@@ -21,4 +21,22 @@ public class StudentService {
     public void insertStudent(Students student){
         studentRepository.save(student);
     }
+
+    public Students getStudentsById(Integer id) {
+        return studentRepository.findById(id)
+                .orElseThrow(() -> new IllegalStateException( id + "not found"));
+    }
+
+    public void deleteStudent(Integer id) {
+        studentRepository.deleteById(id);
+    }
+
+    /* //I have a problem with this
+    public void changeBook(Students student,Integer id) {
+        Students student =  this.getStudentsById(id);
+        student.setBook(book);
+        studentRepository.save(student);
+    }
+
+     */
 }
