@@ -1,0 +1,14 @@
+How to connect to a Postgres db on the terminal (in a Docker db)
+----------------------------------------------------------------
+1- psql -U username (Enter the user)
+2- \l (The list of Database)
+3- create database James (Create a database called kenneth and this is where will be all the table)
+4- \c james (to connect to a database called james)
+5- \d tablename (when connected to a database do that command to view the table)
+
+Spring data JPA 
+---------------
+	-> Spring data JPA is a framework that simplify databse interactions n Spring applications by
+	   providing a high level of abstaction over JPA. reducing boilerplate code and easy implimentaion
+	   of CRUD operations.
+
